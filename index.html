@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wow Note</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <span class="container-header">
+            <h1 class="logo">WOW Note </h1>
+            <p class="catchphrase">, l'aide-mémoire innovant !</p>
+        </span>
+    </header>
+
+
+    <section>
+        <article class="presentation">
+            <h2 class="presentation-title">Bienvenue chez Wow Note</h2>
+            <p class="presentation-phrase">Wow Note a été créé pour aider les personnes à se souvenir des mémos qu'elles souhaitent réaliser. C'est un outil libre de droit accessible à tous. </p>
+            <p class="presentation-phrase">Alors, vous êtes prêt(e) ! A vos Marques , Prêts, Listez !</p>
+           
+        </article>
+
+        <article class="notes">
+            <form class="formNote">
+                <label for="addNote">
+                    Ajouter une note :
+                    <input type="text" name="addNote" id="addNote" class="fs16">
+                </label>
+                <label for="addCategorie">
+                    Catégorie :
+                    <select name="addCategorie" id="addCategorie">
+                        <option value="Nouvelle catégorie">  Nouvelle catégorie</option>
+                        <input type="text" name="newCategorie" class="fs16" id="newCategorie" value=" Catégorie">
+                    </select>
+                </label>
+                <span id="newNote">+</span>
+            </form>
+
+            <div class="listNotes">
+
+            </div>
+        </article>
+    </section>
+
+
+    <footer>
+        <h3 class="title-footer">Designed and created by Verrier Jérémy</h3>
+    </footer>
+
+    <script src="index.js" defer ></script>
+</body>
+</html>
