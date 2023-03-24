@@ -147,7 +147,7 @@ function newLiInBloc(idBloc){
     liNote.innerHTML +=`
     <div class="interactionNote">
         <input class="fs25" id="checked${note}" onclick=checkedTask(checked${note}) type='checkbox'></input>
-        <button onclick=modifyLiNote(${liNote.id}) class="modifyNote widthbutton fs25">🖉</button>
+        <button onclick=modifyLiNote(${liNote.id}) class="modifyNote widthbutton fs25">✎</button>
         <button onclick=deleteLiNote(${liNote.id}) class="deleteNote widthbutton fs25">🗑</button>
     </div>`;
 
