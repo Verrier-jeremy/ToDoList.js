@@ -104,7 +104,8 @@ form{
     height: 60px;
     background-color: #eee;
     justify-content: space-between;
-    padding : 0 20px
+    padding : 0 20px;
+    margin : 0 20px;
 }
 label{
     display: flex;
@@ -235,4 +236,127 @@ footer{
 .title-footer{
     color: #c23aea;
     font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 1270px) {
+    form{
+        flex-wrap : wrap;
+        height : 80px;
+        padding: 10px;
+    }
+
+    #newNote{
+        position:relative;
+        bottom : 60px;
+        left : 93%;
+
+    }
+    .inputAdd{
+        width:270px;
+    }
+    .inputCategorie{
+        width:207px;
+    }
+    .inputAdd, .inputCategorie{
+        margin-left : 10px;
+    }
+   
+    label{
+        margin-bottom: 10px;
+
+    }
+    
+}
+
+@media (max-width: 790px) {
+    header{
+        font-size: 24px;
+        height: 65px;
+    }
+
+    .logo{
+        margin-left: 10px;
+    }
+
+    .catchphrase{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    
+    .presentation{
+        margin: 20px 10px;
+    }
+    .presentation-title{
+        font-size: 20px;  
+    }
+
+    .presentation-phrase{
+        font-size: 16px;
+        width : 70%;
+    }
+
+    .notes{
+    padding: 20px;
+    margin:0 10px ;
+    }
+
+    form{
+    height: 210px;
+    padding-bottom: 10px;
+    }
+
+    #newNote{
+        left : 46%;
+        bottom : 0px;
+
+    }
+
+    label{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #addNote{
+        margin-left: 0;
+        width: 100%;
+    }
+    .inputCategorie{
+        width:100%;
+        margin-left: 0;
+    }
+    .titleBloc{
+        font-size: 24px;
+    }
+
+    .liNote{
+        font-size: 20px;
+    }
+    footer{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 470px) {
+
+    header{
+        height : 50px;
+    }
+    .container-header{
+        font-size: 18px;
+    }
+    form{
+        margin : 0;
+    }
+    .titleBloc{
+        font-size: 18px;
+    }
+
+    .liNote{
+        font-size: 16px;
+    }
+
+    .BlocNote {
+        margin: 10px 0;
+    }
 }
