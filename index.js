@@ -38,7 +38,7 @@ function isNote(e){
 let liNote = document.querySelector(`.liNote`);
 function newNote(){
     if(taskEnter.value == ''){
-        alert("Aucune note n'a été mentionnée !")
+        alert("Aucune note n'a été mentionné !")
     }else if((addCategorie.value == 'Nouvelle catégorie') && (inputNewCategorie.value == '')){
         alert("Aucune catégorie n'a été selectionné !")
     }else{
