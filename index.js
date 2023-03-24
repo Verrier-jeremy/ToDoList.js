@@ -38,9 +38,9 @@ function isNote(e){
 let liNote = document.querySelector(`.liNote`);
 function newNote(){
     if(taskEnter.value == ''){
-        alert("Aucune tache n'a été mentionnée !")
+        alert("Aucune note n'a été mentionnée !")
     }else if((addCategorie.value == 'Nouvelle catégorie') && (inputNewCategorie.value == '')){
-        alert("Aucune categorie n'a été selectionnée !")
+        alert("Aucune catégorie n'a été selectionné !")
     }else{
         let validNote = validationInput(taskEnter.value);        
         if((addCategorie.value == 'Nouvelle catégorie') && (validNote) ){
@@ -81,7 +81,7 @@ function modifyLiNote(e){
     let idLiNote = e.id;
     let modifyNote = document.getElementById(idLiNote)
 
-    let aksModification = prompt(`Quelle tache va remplacer : ${e.firstChild.data}`);
+    let aksModification = prompt(`Quelle note va remplacer : ${e.firstChild.data}`);
     if(aksModification != ""){
         modifyNote.firstChild.textContent = aksModification;
     }
@@ -129,7 +129,7 @@ function newBlocNote(idBloc){
     liNote.innerHTML +=`
     <div class="interactionNote">
         <input class="fs25" id="checked${note}" onclick=checkedTask(checked${note}) type='checkbox'></input>
-        <button onclick=modifyLiNote(${liNote.id}) class="modifyNote widthbutton fs25">🖉</button>
+        <button onclick=modifyLiNote(${liNote.id}) class="modifyNote widthbutton fs25">✎</button>
         <button onclick=deleteLiNote(${liNote.id}) class="deleteNote widthbutton fs25">🗑</button>
     </div>`;
     taskEnter.value= '';
